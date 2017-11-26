@@ -1,0 +1,55 @@
+.wrapper {
+    position: relativ;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+#photoCanvas {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.overlay .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.overlay .target {
+    border: 1px red solid;
+    height: 100px;
+    width: 500px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.semi-transparent {
+    background-color: rgba(100, 100, 100, 0.5);
+}
