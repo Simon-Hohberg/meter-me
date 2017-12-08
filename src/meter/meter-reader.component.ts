@@ -4,8 +4,8 @@ import { WebCNN, Array3D } from './webcnn';
 import * as numjs from '../lib/numjs';
 
 @Component({
-  selector: 'photo',
-  styleUrls: ['photo.component.css'],
+  selector: 'meter-reader',
+  styleUrls: ['meter-reader.component.css'],
   template: `
     <div class="wrapper">
         <div class="overlay">
@@ -33,7 +33,7 @@ import * as numjs from '../lib/numjs';
     </div>
     `
 })
-export class PhotoComponent {
+export class MeterReaderComponent {
 
     private static readonly CNN_FILE = 'assets/cnn_mnist_10_20_98accuracy.json';
 
@@ -65,7 +65,7 @@ export class PhotoComponent {
         //     console.error(error);
         // });recognized
         
-        fetch(PhotoComponent.CNN_FILE)
+        fetch(MeterReaderComponent.CNN_FILE)
             .then(result => {
                 return result.json();
             })

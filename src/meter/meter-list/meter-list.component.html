@@ -1,0 +1,13 @@
+<mat-list id="meterList">
+  <mat-list-item *ngFor="let meter of meters" [routerLink]="'/meter/' + meter.id" (click)="goToMeter(meter.id)">
+    <mat-icon matListIcon>{{ getIconForType(meter.type) }}</mat-icon>
+    <h3 matLine>{{ meter.type }}</h3>
+    <p matLine>
+      <span>{{ meter.consumption }}</span>
+      <!-- <span class="demo-2"> -- {{message.content}} </span> -->
+    </p>
+  </mat-list-item>
+</mat-list>
+<button id="addButton" mat-mini-fab routerLink="/new">
+  <mat-icon aria-label="Add">add</mat-icon>
+</button>

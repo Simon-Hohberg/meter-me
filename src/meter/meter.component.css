@@ -1,0 +1,12 @@
+:host {
+    width: 100vw;
+    height: 100vh;
+}
+
+#backButton {
+    padding: 0;
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}

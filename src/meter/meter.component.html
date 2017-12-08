@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <button id="backButton" mat-button *ngIf="canGoBack" (click)="goBack()">
+        <mat-icon aria-label="Add">keyboard_arrow_left</mat-icon>
+    </button>
+    <span>Meter</span>
+</mat-toolbar>
+<!-- <nav>
+    <a routerLink="/meter/123" routerLinkActive="active">Meter Details</a>
+    <a routerLink="/read" routerLinkActive="active">Read</a>
+</nav> -->
+<router-outlet></router-outlet>

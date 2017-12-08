@@ -1,0 +1,14 @@
+#meterList {
+    overflow-y: auto;
+    max-height: calc(100% - 65px);
+}
+#meterList mat-list-item:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+#addButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
